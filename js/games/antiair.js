@@ -33,6 +33,15 @@ canvas.addEventListener("click", async () => {
     }
 });
 
+document.addEventListener("mousedown", (event) => {
+    event.preventDefault();
+    if (event.button === 2 && document.pointerLockElement === canvas) {
+        document.exitPointerLock();
+    }
+});
+
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
 //Gameover properties
 const gameover = {
     width: 600 * width_upscale,
