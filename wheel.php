@@ -20,6 +20,13 @@
     <script src="./js/cookies.js"></script>
 </head>
 <body>
+    <div class="messageBox">
+        <img src="assets/noInternetIcon.svg" alt="NoInternetConnection">
+        <p class="info"><span class="error">BŁĄD</span> Brak polączenia z internetem. Powiadom obsługę</p>
+        <div class="messageBoxInner">
+            <button class="backButton">Home</button>
+        </div>
+    </div>
     <audio id="win_sound">
         <source src="./sounds/prizeWon.mp3" type="audio/mpeg">
     </audio>

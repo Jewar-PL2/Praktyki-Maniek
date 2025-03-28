@@ -260,3 +260,69 @@ span.premium {
     transform: scale(1.1);
 }
 
+.error {
+    font-weight: bold;
+    color: red;
+}
+
+.messageBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 102;
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.messageBox > .info {
+    font-size: larger;
+    font-family: var(--zsp-font);
+}
+
+.messageBoxInner {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.messageBox img {
+    width: 5em;
+    height: 5em;
+
+    cursor:not-allowed;
+    transition: 0.1s;
+}
+
+.backButton {
+    color: orange;
+    font-family: var(--maniek-font);
+    font-size: 2rem;
+    
+    border-radius: 15px;
+
+    margin: 0;
+    text-shadow: 0 0 5px black,
+                0 0 5px black,
+                0 0 5px black;
+
+    z-index: 101;
+
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+
+    background-color: var(--lightblue-bg);
+    border: 0.2em solid rgba(56, 92, 255, 0.5);
+
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.backButton:hover {
+    border: 0.3em solid rgba(56,92,255,0.6);
+}
